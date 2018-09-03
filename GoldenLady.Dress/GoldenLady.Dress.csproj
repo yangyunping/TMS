@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C277FB8-43E5-4CF1-BDE1-1F37B21E8A92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoldenLady.Dress</RootNamespace>
+    <AssemblyName>GoldenLady.Dress</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>browser.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientSide, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ClientSide.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="RemoteObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RemoteObject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeePassword.designer.cs">
+      <DependentUpon>frmEmployeePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputBox.designer.cs">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrinter.designer.cs">
+      <DependentUpon>frmPrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuickOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickOrder.designer.cs">
+      <DependentUpon>frmQuickOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Initialize.cs" />
+    <Compile Include="SMSNew\frmAddAi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSNew\frmAddAi.Designer.cs">
+      <DependentUpon>frmAddAi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSNew\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSNew\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSNew\frmOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSNew\frmOption.designer.cs">
+      <DependentUpon>frmOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSNew\frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSNew\frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSNew\frmSendSms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSNew\frmSendSms.Designer.cs">
+      <DependentUpon>frmSendSms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSNew\frmSexChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSNew\frmSexChoose.Designer.cs">
+      <DependentUpon>frmSexChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSNew\MessageSend.cs" />
+    <Compile Include="Splash.cs" />
+    <Compile Include="Utils\DoubleBufferListView .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\RentDressesInfo.cs" />
+    <Compile Include="Utils\DoubleBufferDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmAddCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmAddCost.Designer.cs">
+      <DependentUpon>FrmAddCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmAddRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmAddRemark.Designer.cs">
+      <DependentUpon>FrmAddRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmArrangeTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmArrangeTime.Designer.cs">
+      <DependentUpon>FrmArrangeTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmCallBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmCallBack.Designer.cs">
+      <DependentUpon>FrmCallBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmChangeDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmChangeDate.Designer.cs">
+      <DependentUpon>FrmChangeDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmDressAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmDressAdd.Designer.cs">
+      <DependentUpon>FrmDressAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmDressHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmDressHistory.Designer.cs">
+      <DependentUpon>FrmDressHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmDressRentedInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmDressRentedInfo.Designer.cs">
+      <DependentUpon>FrmDressRentedInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmMarryDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmMarryDate.Designer.cs">
+      <DependentUpon>FrmMarryDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmOperateEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmOperateEmp.Designer.cs">
+      <DependentUpon>FrmOperateEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmQuickOrder.cs" />
+    <Compile Include="View\FrmEmpAchieve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmEmpAchieve.Designer.cs">
+      <DependentUpon>FrmEmpAchieve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\BaseData.cs" />
+    <Compile Include="Utils\ConfigManager.cs" />
+    <Compile Include="Utils\AllKindsData.cs" />
+    <Compile Include="Utils\CustomizedCursor.cs" />
+    <Compile Include="Utils\DressState.cs" />
+    <Compile Include="Utils\Methods.cs" />
+    <Compile Include="Utils\DressManager.cs" />
+    <Compile Include="Utils\RuleStandard.cs" />
+    <Compile Include="View\DressRent\FrmDressRentChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmDressRentChoose.Designer.cs">
+      <DependentUpon>FrmDressRentChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmOrdersSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmOrdersSearch.Designer.cs">
+      <DependentUpon>FrmOrdersSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmRentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmRentList.Designer.cs">
+      <DependentUpon>FrmRentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DressRent\FrmTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DressRent\FrmTemplate.Designer.cs">
+      <DependentUpon>FrmTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAllStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmAllStatistics.Designer.cs">
+      <DependentUpon>FrmAllStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAreaPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAreaPicker.Designer.cs">
+      <DependentUpon>FrmAreaPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmCrossReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmCrossReservation.Designer.cs">
+      <DependentUpon>FrmCrossReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDailyCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDailyCount.Designer.cs">
+      <DependentUpon>FrmDailyCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressInOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressInOut.Designer.cs">
+      <DependentUpon>FrmDressInOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressInfo.Designer.cs">
+      <DependentUpon>FrmDressInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressModify.Designer.cs">
+      <DependentUpon>FrmDressModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAllDressSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmAllDressSearch.Designer.cs">
+      <DependentUpon>FrmAllDressSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressCleaning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressCleaning.Designer.cs">
+      <DependentUpon>FrmDressCleaning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressStateChange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressStateChange.Designer.cs">
+      <DependentUpon>FrmDressStateChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressInVenue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressInVenue.Designer.cs">
+      <DependentUpon>FrmDressInVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressPreSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressPreSelect.Designer.cs">
+      <DependentUpon>FrmDressPreSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressChoosedSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressChoosedSearch.Designer.cs">
+      <DependentUpon>FrmDressChoosedSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmFavouriteDress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmFavouriteDress.Designer.cs">
+      <DependentUpon>FrmFavouriteDress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmNewDress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmNewDress.Designer.cs">
+      <DependentUpon>FrmNewDress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmNewScene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmNewScene.Designer.cs">
+      <DependentUpon>FrmNewScene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmNewTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmNewTheme.Designer.cs">
+      <DependentUpon>FrmNewTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmPowerEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmPowerEmp.Designer.cs">
+      <DependentUpon>FrmPowerEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmScene.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmScene.Designer.cs">
+      <DependentUpon>FrmScene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmSceneDress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSceneDress.Designer.cs">
+      <DependentUpon>FrmSceneDress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmScenePhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmScenePhoto.Designer.cs">
+      <DependentUpon>FrmScenePhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\FrmOrdersShootSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmOrdersShootSearch.Designer.cs">
+      <DependentUpon>FrmOrdersShootSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmSmallGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSmallGoods.Designer.cs">
+      <DependentUpon>FrmSmallGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmTheme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmTheme.Designer.cs">
+      <DependentUpon>FrmTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmThemeDress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmThemeDress.Designer.cs">
+      <DependentUpon>FrmThemeDress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmVenue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmVenue.Designer.cs">
+      <DependentUpon>FrmVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmNewVenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmNewVenue.Designer.cs">
+      <DependentUpon>FrmNewVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmVenueCleanInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmVenueCleanInfo.Designer.cs">
+      <DependentUpon>FrmVenueCleanInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmDressCleanStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FrmDressCleanStatistics.Designer.cs">
+      <DependentUpon>FrmDressCleanStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Template\FrmBackWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Template\FrmBackWork.Designer.cs">
+      <DependentUpon>FrmBackWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Template\FrmDressBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Template\FrmDressBase.Designer.cs">
+      <DependentUpon>FrmDressBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Template\FrmExampleShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Template\FrmExampleShow.Designer.cs">
+      <DependentUpon>FrmExampleShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Template\FrmManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Template\FrmManage.Designer.cs">
+      <DependentUpon>FrmManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Template\FrmNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Template\FrmNew.Designer.cs">
+      <DependentUpon>FrmNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Template\FrmPhotoShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Template\FrmPhotoShow.Designer.cs">
+      <DependentUpon>FrmPhotoShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Template\FrmWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Template\FrmWaiting.Designer.cs">
+      <DependentUpon>FrmWaiting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBasForm.resx">
+      <DependentUpon>frmBasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeePassword.resx">
+      <DependentUpon>frmEmployeePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputBox.resx">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrinter.resx">
+      <DependentUpon>frmPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickOrder.resx">
+      <DependentUpon>frmQuickOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSNew\frmAddAi.resx">
+      <DependentUpon>frmAddAi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSNew\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSNew\frmOption.resx">
+      <DependentUpon>frmOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSNew\frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSNew\frmSendSms.resx">
+      <DependentUpon>frmSendSms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSNew\frmSexChoose.resx">
+      <DependentUpon>frmSexChoose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmAddCost.resx">
+      <DependentUpon>FrmAddCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmAddRemark.resx">
+      <DependentUpon>FrmAddRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmArrangeTime.resx">
+      <DependentUpon>FrmArrangeTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmCallBack.resx">
+      <DependentUpon>FrmCallBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmChangeDate.resx">
+      <DependentUpon>FrmChangeDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmDressAdd.resx">
+      <DependentUpon>FrmDressAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmDressHistory.resx">
+      <DependentUpon>FrmDressHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmDressRentedInfo.resx">
+      <DependentUpon>FrmDressRentedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmMarryDate.resx">
+      <DependentUpon>FrmMarryDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmOperateEmp.resx">
+      <DependentUpon>FrmOperateEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmEmpAchieve.resx">
+      <DependentUpon>FrmEmpAchieve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmDressRentChoose.resx">
+      <DependentUpon>FrmDressRentChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmOrdersSearch.resx">
+      <DependentUpon>FrmOrdersSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmRentList.resx">
+      <DependentUpon>FrmRentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DressRent\FrmTemplate.resx">
+      <DependentUpon>FrmTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAllStatistics.resx">
+      <DependentUpon>FrmAllStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAreaPicker.resx">
+      <DependentUpon>FrmAreaPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCrossReservation.resx">
+      <DependentUpon>FrmCrossReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDailyCount.resx">
+      <DependentUpon>FrmDailyCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressInOut.resx">
+      <DependentUpon>FrmDressInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressInfo.resx">
+      <DependentUpon>FrmDressInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressModify.resx">
+      <DependentUpon>FrmDressModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAllDressSearch.resx">
+      <DependentUpon>FrmAllDressSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressCleaning.resx">
+      <DependentUpon>FrmDressCleaning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressStateChange.resx">
+      <DependentUpon>FrmDressStateChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressInVenue.resx">
+      <DependentUpon>FrmDressInVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressPreSelect.resx">
+      <DependentUpon>FrmDressPreSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressChoosedSearch.resx">
+      <DependentUpon>FrmDressChoosedSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmFavouriteDress.resx">
+      <DependentUpon>FrmFavouriteDress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmNewDress.resx">
+      <DependentUpon>FrmNewDress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmNewScene.resx">
+      <DependentUpon>FrmNewScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmNewTheme.resx">
+      <DependentUpon>FrmNewTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmPowerEmp.resx">
+      <DependentUpon>FrmPowerEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmScene.resx">
+      <DependentUpon>FrmScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSceneDress.resx">
+      <DependentUpon>FrmSceneDress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmScenePhoto.resx">
+      <DependentUpon>FrmScenePhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmOrdersShootSearch.resx">
+      <DependentUpon>FrmOrdersShootSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSmallGoods.resx">
+      <DependentUpon>FrmSmallGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTheme.resx">
+      <DependentUpon>FrmTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmThemeDress.resx">
+      <DependentUpon>FrmThemeDress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmVenue.resx">
+      <DependentUpon>FrmVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmNewVenue.resx">
+      <DependentUpon>FrmNewVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmVenueCleanInfo.resx">
+      <DependentUpon>FrmVenueCleanInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmDressCleanStatistics.resx">
+      <DependentUpon>FrmDressCleanStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Template\FrmBackWork.resx">
+      <DependentUpon>FrmBackWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Template\FrmDressBase.resx">
+      <DependentUpon>FrmDressBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Template\FrmExampleShow.resx">
+      <DependentUpon>FrmExampleShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Template\FrmManage.resx">
+      <DependentUpon>FrmManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Template\FrmNew.resx">
+      <DependentUpon>FrmNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Template\FrmPhotoShow.resx">
+      <DependentUpon>FrmPhotoShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Template\FrmWaiting.resx">
+      <DependentUpon>FrmWaiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoldenLady.AutoUpdate\GoldenLady.AutoUpdate.csproj">
+      <Project>{521f6579-2ddb-45b1-827e-8fec99e07ccc}</Project>
+      <Name>GoldenLady.AutoUpdate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoldenLady.ErrorHandle\GoldenLady.ErrorHandle.csproj">
+      <Project>{684d2216-b0ca-449b-a39e-4e4895b1e167}</Project>
+      <Name>GoldenLady.ErrorHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoldenLady.Extension\GoldenLady.Extension.csproj">
+      <Project>{3fe55a83-f412-40a9-b6cb-b9f200b3fe5d}</Project>
+      <Name>GoldenLady.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoldenLady.Global\GoldenLady.Global.csproj">
+      <Project>{a361de15-4e15-496e-a5d4-b1313ae3a1e0}</Project>
+      <Name>GoldenLady.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoldenLady.GoldenControl\GoldenLady.GoldenControl.csproj">
+      <Project>{5CCF03B3-C5C5-4160-A120-5E109734A575}</Project>
+      <Name>GoldenLady.GoldenControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoldenLady.Standard\GoldenLady.Standard.csproj">
+      <Project>{be9f95e2-be2f-488c-b270-d0c6a5b521b8}</Project>
+      <Name>GoldenLady.Standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoldenLady.Utility\GoldenLady.Utility.csproj">
+      <Project>{87f66207-8be8-440c-9137-ee3bd4a89e08}</Project>
+      <Name>GoldenLady.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoldenLadyWS\GoldenLadyWS.csproj">
+      <Project>{b231a180-5cd9-47f6-81b3-325c3c5f263e}</Project>
+      <Name>GoldenLadyWS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="browser.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

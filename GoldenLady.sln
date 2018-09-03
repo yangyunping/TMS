@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.GoldenControl", "GoldenLady.GoldenControl\GoldenLady.GoldenControl.csproj", "{5CCF03B3-C5C5-4160-A120-5E109734A575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.Utility", "GoldenLady.Utility\GoldenLady.Utility.csproj", "{87F66207-8BE8-440C-9137-EE3BD4A89E08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.AutoUpdate", "GoldenLady.AutoUpdate\GoldenLady.AutoUpdate.csproj", "{521F6579-2DDB-45B1-827E-8FEC99E07CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLadyWS", "GoldenLadyWS\GoldenLadyWS.csproj", "{B231A180-5CD9-47F6-81B3-325C3C5F263E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.ErrorHandle", "GoldenLady.ErrorHandle\GoldenLady.ErrorHandle.csproj", "{684D2216-B0CA-449B-A39E-4E4895B1E167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.Standard", "GoldenLady.Standard\GoldenLady.Standard.csproj", "{BE9F95E2-BE2F-488C-B270-D0C6A5B521B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.Global", "GoldenLady.Global\GoldenLady.Global.csproj", "{A361DE15-4E15-496E-A5D4-B1313AE3A1E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.Extension", "GoldenLady.Extension\GoldenLady.Extension.csproj", "{3FE55A83-F412-40A9-B6CB-B9F200B3FE5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenLady.Dress", "GoldenLady.Dress\GoldenLady.Dress.csproj", "{1C277FB8-43E5-4CF1-BDE1-1F37B21E8A92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CCF03B3-C5C5-4160-A120-5E109734A575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCF03B3-C5C5-4160-A120-5E109734A575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCF03B3-C5C5-4160-A120-5E109734A575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCF03B3-C5C5-4160-A120-5E109734A575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F66207-8BE8-440C-9137-EE3BD4A89E08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F66207-8BE8-440C-9137-EE3BD4A89E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F66207-8BE8-440C-9137-EE3BD4A89E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F66207-8BE8-440C-9137-EE3BD4A89E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{521F6579-2DDB-45B1-827E-8FEC99E07CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521F6579-2DDB-45B1-827E-8FEC99E07CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521F6579-2DDB-45B1-827E-8FEC99E07CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521F6579-2DDB-45B1-827E-8FEC99E07CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B231A180-5CD9-47F6-81B3-325C3C5F263E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B231A180-5CD9-47F6-81B3-325C3C5F263E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B231A180-5CD9-47F6-81B3-325C3C5F263E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B231A180-5CD9-47F6-81B3-325C3C5F263E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{684D2216-B0CA-449B-A39E-4E4895B1E167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{684D2216-B0CA-449B-A39E-4E4895B1E167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{684D2216-B0CA-449B-A39E-4E4895B1E167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{684D2216-B0CA-449B-A39E-4E4895B1E167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE9F95E2-BE2F-488C-B270-D0C6A5B521B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9F95E2-BE2F-488C-B270-D0C6A5B521B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9F95E2-BE2F-488C-B270-D0C6A5B521B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9F95E2-BE2F-488C-B270-D0C6A5B521B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A361DE15-4E15-496E-A5D4-B1313AE3A1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A361DE15-4E15-496E-A5D4-B1313AE3A1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A361DE15-4E15-496E-A5D4-B1313AE3A1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A361DE15-4E15-496E-A5D4-B1313AE3A1E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE55A83-F412-40A9-B6CB-B9F200B3FE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE55A83-F412-40A9-B6CB-B9F200B3FE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE55A83-F412-40A9-B6CB-B9F200B3FE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE55A83-F412-40A9-B6CB-B9F200B3FE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C277FB8-43E5-4CF1-BDE1-1F37B21E8A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C277FB8-43E5-4CF1-BDE1-1F37B21E8A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C277FB8-43E5-4CF1-BDE1-1F37B21E8A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C277FB8-43E5-4CF1-BDE1-1F37B21E8A92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal
